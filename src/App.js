@@ -23,7 +23,7 @@ function App() {
             <>
               <header
                 style={{
-                  backgroundColor: "#555",
+                  backgroundColor: "#666",
                   height: "100px",
                   textAlign: "center",
                 }}
