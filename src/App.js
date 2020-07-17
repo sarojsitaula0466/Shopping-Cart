@@ -21,9 +21,25 @@ function App() {
           path="/"
           render={(props) => (
             <>
-              <Link to="/checkout">
-                <button>Go to cart ({cart.length})</button>
-              </Link>
+              <header
+                style={{
+                  backgroundColor: "#555",
+                  height: "100px",
+                  textAlign: "center",
+                }}
+              >
+                <Link to="/checkout">
+                  <button
+                    style={{
+                      fontSize: "18px",
+                      padding: "5px",
+                      marginTop: "30px",
+                    }}
+                  >
+                    Checkout ({cart.length})
+                  </button>
+                </Link>
+              </header>
               <Products addToCart={addToCart} />
             </>
           )}
